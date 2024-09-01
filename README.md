@@ -1,1 +1,1 @@
-# orchestra-plugin-catalog
+# plugin-catalog-test
