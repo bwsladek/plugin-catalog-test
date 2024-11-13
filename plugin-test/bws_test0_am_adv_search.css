@@ -1,0 +1,259 @@
+/* Global Styles */
+body {
+    font-family: 'Lato', sans-serif;
+    color: #2c2c2c;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Advanced Search Container */
+  #advanced_search {
+    background-color: #ffffff;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  #advanced_search legend {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 0.5rem;
+  }
+  
+  #advanced_search fieldset {
+    border: none;
+    margin-bottom: 2rem;
+  }
+  
+  /* Location Section */
+  #advanced_search .property-section .multiple-selects {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  #advanced_search .multiple-selects label {
+    font-weight: bold;
+    color: #555555;
+  }
+  
+  #advanced_search .multiple-selects select {
+    width: 100%;
+    height: 250px;
+    padding: 0.5rem;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    background-color: #fafafa;
+    color: #333333;
+    font-size: 1rem;
+    overflow-y: auto;
+  }
+  
+  #advanced_search .notes {
+    font-size: 0.875rem;
+    color: #888888;
+    margin-top: 0.5rem;
+  }
+  
+  /* Property Details Section */
+  #advanced_search .details-section label {
+    font-weight: bold;
+    color: #555555;
+  }
+  
+  #advanced_search .details-section select,
+  #advanced_search .details-section input[type="text"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    background-color: #fafafa;
+    color: #333333;
+    font-size: 1rem;
+  }
+  
+  #advanced_search .details-section .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  
+  #advanced_search .details-section ul.styled-select {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  
+  #advanced_search .details-section ul.styled-select > li {
+    flex: 1 1 calc(33.333% - 1rem);
+    margin-bottom: 1rem;
+  }
+  
+  #advanced_search .details-section .property-type {
+    margin-bottom: 2rem;
+  }
+  
+  #advanced_search .property-type div[aria-role="group"] > label {
+    display: inline-block;
+    margin-right: 1.5rem;
+    font-weight: normal;
+  }
+  
+  #advanced_search .property-type input[type="checkbox"] {
+    margin-right: 0.5rem;
+  }
+  
+  /* MultiSelect Dropdowns */
+  #advanced_search a.multiSelect {
+    display: block;
+    position: relative;
+    padding: 0.5rem;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    background-color: #fafafa;
+    color: #333333;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  #advanced_search a.multiSelect::after {
+    content: '▼';
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.75rem;
+    color: #888888;
+  }
+  
+  #advanced_search .multiSelectOptions {
+    position: absolute;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    max-height: 200px;
+    overflow-y: auto;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    display: none;
+  }
+  
+  #advanced_search .multiSelectOptions label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  #advanced_search .multiSelectOptions input[type="checkbox"] {
+    margin-right: 0.5rem;
+  }
+  
+  #advanced_search a.multiSelect:focus + .multiSelectOptions,
+  #advanced_search .multiSelectOptions:hover {
+    display: block;
+    z-index: 1000;
+  }
+  
+  /* Submit Buttons */
+  #advanced_search .advanced-submit-wrapper {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  #advanced_search .advanced-submit input[type="submit"] {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-right: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  #advanced_search .advanced-submit input[type="submit"]:hover {
+    background-color: #555555;
+  }
+  
+  /* Refine Search Tabs */
+  dl.tabs {
+    display: flex;
+    border-bottom: 2px solid #e0e0e0;
+    margin-bottom: 2rem;
+  }
+  
+  dl.tabs dd {
+    margin-right: 2rem;
+  }
+  
+  dl.tabs dd.active a {
+    font-weight: bold;
+    color: #333333;
+    border-bottom: 2px solid #333333;
+  }
+  
+  dl.tabs dd a {
+    text-decoration: none;
+    color: #888888;
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+  }
+  
+  dl.tabs dd a:hover {
+    color: #333333;
+  }
+  
+  /* Sub Bar Links */
+  .sub-bar-link {
+    margin-bottom: 2rem;
+  }
+  
+  .sub-bar-link span,
+  .sub-bar-link a {
+    margin-right: 1.5rem;
+    font-size: 1rem;
+    color: #888888;
+    text-decoration: none;
+  }
+  
+  .sub-bar-link span.active-search {
+    font-weight: bold;
+    color: #333333;
+  }
+  
+  .sub-bar-link a:hover {
+    color: #333333;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #advanced_search .multiple-selects {
+      flex-direction: column;
+    }
+  
+    #advanced_search .details-section ul.styled-select > li {
+      flex: 1 1 100%;
+    }
+  
+    dl.tabs dd {
+      margin-right: 1rem;
+    }
+  
+    dl.tabs dd a {
+      font-size: 0.875rem;
+    }
+  
+    #advanced_search .advanced-submit input[type="submit"] {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  }
+  
